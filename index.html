@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Imad Eddine Djerarda — Embedded Systems Engineer, IoT developer, educator, and project builder from Algeria."
+    />
+    <meta name="author" content="Imad Eddine Djerarda" />
+    <meta name="theme-color" content="#0a1017" />
+    <meta property="og:title" content="Imad Eddine Djerarda — Embedded Systems Engineer" />
+    <meta
+      property="og:description"
+      content="Embedded systems, IoT, edge computing, mobile interfaces, and engineering education."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://imadjr.github.io/portfolio/" />
+    <meta property="og:image" content="https://imadjr.github.io/portfolio/assets/images/og-portfolio.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Imad Eddine Djerarda | Embedded Systems Engineer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      (() => {
+        const saved = localStorage.getItem("imad-portfolio-theme");
+        const preferred = window.matchMedia("(prefers-color-scheme: light)").matches
+          ? "light"
+          : "dark";
+        document.documentElement.dataset.theme = saved || preferred;
+        document.documentElement.classList.add("js-enabled");
+      })();
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <div class="container nav-shell">
+        <a class="brand" href="#home" aria-label="Imad Djerarda — home">
+          <span class="brand-mark" aria-hidden="true">ID</span>
+          <span class="brand-copy">
+            <strong>Imad Djerarda</strong>
+            <small>Embedded systems / IoT</small>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          data-nav-toggle
+        >
+          <span></span><span></span><span></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+
+        <nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation" data-nav>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch color theme">
+          <span class="theme-icon theme-icon-dark" aria-hidden="true">◐</span>
+          <span class="theme-icon theme-icon-light" aria-hidden="true">○</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section" id="home" aria-labelledby="hero-title">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="container hero-layout">
+          <div class="hero-copy reveal">
+            <div class="eyebrow"><span class="status-dot"></span> Open to engineering opportunities</div>
+            <p class="hero-kicker">Embedded systems · IoT · edge intelligence</p>
+            <h1 id="hero-title">I build reliable systems where <em>hardware meets software.</em></h1>
+            <p class="hero-summary">
+              I’m <strong>Imad Eddine Djerarda</strong>, an Embedded Systems Engineer, IoT developer,
+              educator, and hands-on project builder from Algeria. I turn sensor data into useful,
+              testable products—from firmware and edge processing to mobile interfaces.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">Explore selected work <span>↘</span></a>
+              <a class="button button-secondary" href="#contact">Discuss a project</a>
+            </div>
+            <div class="hero-links" aria-label="Professional links">
+              <a href="https://github.com/Imadjr" target="_blank" rel="noreferrer">GitHub ↗</a>
+              <a href="https://www.linkedin.com/in/imad-djr/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+              <a href="mailto:imad.djerarda@gmail.com">Email ↗</a>
+            </div>
+          </div>
+
+          <aside class="hero-console reveal reveal-delay" aria-label="Engineering profile summary">
+            <div class="console-head">
+              <span>PROFILE / 01</span>
+              <span class="console-status">SYSTEM READY</span>
+            </div>
+            <div class="console-identity">
+              <span class="identity-monogram">IED</span>
+              <div>
+                <p>Based in</p>
+                <strong>Algeria</strong>
+              </div>
+            </div>
+            <dl class="spec-list">
+              <div><dt>Core</dt><dd>Embedded C/C++ · IoT</dd></div>
+              <div><dt>Edge</dt><dd>ESP32 · Jetson Nano</dd></div>
+              <div><dt>Interface</dt><dd>Flutter · dashboards</dd></div>
+              <div><dt>Method</dt><dd>Prototype → validate → document</dd></div>
+            </dl>
+            <div class="signal-row">
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+              <small>live systems thinking</small>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-lined" id="about" aria-labelledby="about-title">
+        <div class="container section-grid">
+          <div class="section-index reveal">
+            <span>01</span>
+            <p>About</p>
+          </div>
+          <div class="section-content">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Engineering perspective</p>
+              <h2 id="about-title">Useful technology starts with a clear problem and ends with evidence.</h2>
+            </div>
+            <div class="about-grid">
+              <div class="about-copy reveal">
+                <p class="lead">
+                  My work sits across electronics, firmware, connectivity, edge computing, and user-facing
+                  software. I’m interested in systems that operate in the real world—under physical,
+                  timing, power, and reliability constraints.
+                </p>
+                <p>
+                  I approach projects as complete engineering stories: define the operating context,
+                  choose the right sensors and compute platform, design the data path, validate behavior,
+                  and communicate the result clearly. As an educator, I also care about making difficult
+                  technical ideas understandable and reproducible.
+                </p>
+              </div>
+              <div class="principles reveal reveal-delay">
+                <article>
+                  <span>01 /</span>
+                  <div><h3>System-level thinking</h3><p>Hardware, firmware, networks, interfaces, and deployment treated as one system.</p></div>
+                </article>
+                <article>
+                  <span>02 /</span>
+                  <div><h3>Measured iteration</h3><p>Prototype quickly, test assumptions, document findings, then improve the design.</p></div>
+                </article>
+                <article>
+                  <span>03 /</span>
+                  <div><h3>Knowledge transfer</h3><p>Build work that teammates, students, and future maintainers can understand.</p></div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-title-row reveal">
+            <div>
+              <p class="eyebrow">02 / Selected work</p>
+              <h2 id="projects-title">Projects built around real constraints.</h2>
+            </div>
+            <p>Each case study connects a field problem to hardware, software, and a clear system outcome.</p>
+          </div>
+
+          <div class="project-list">
+            <article class="project-card project-featured reveal">
+              <div class="project-number">P / 01</div>
+              <div class="project-body">
+                <div class="project-meta"><span>Mobility infrastructure</span><span>Embedded + IoT</span></div>
+                <h3>Smart Parking System</h3>
+                <p>
+                  A connected parking architecture designed to detect space occupancy, expose availability
+                  in real time, and support a clear operator and driver experience.
+                </p>
+                <div class="project-story">
+                  <div><strong>Problem</strong><span>Reduce search time and make parking state visible.</span></div>
+                  <div><strong>System</strong><span>Occupancy sensors → edge controller → network layer → dashboard.</span></div>
+                  <div><strong>Focus</strong><span>Sensor reliability, connectivity recovery, and usable status feedback.</span></div>
+                </div>
+                <ul class="tech-list"><li>ESP32</li><li>Arduino</li><li>IoT telemetry</li><li>Flutter</li></ul>
+              </div>
+              <div class="project-diagram" aria-label="Smart parking system flow diagram">
+                <span class="diagram-label">FIELD NODE</span>
+                <div class="diagram-nodes"><i></i><i></i><i></i><i></i></div>
+                <div class="diagram-route"><b></b><b></b><b></b></div>
+                <span class="diagram-output">LIVE OCCUPANCY</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-number">P / 02</div>
+              <div class="project-body">
+                <div class="project-meta"><span>Precision agriculture</span><span>Remote monitoring</span></div>
+                <h3>Smart Agriculture & Irrigation</h3>
+                <p>
+                  A field-monitoring concept combining soil and environmental sensing with rule-based
+                  irrigation control and remote status visibility.
+                </p>
+                <div class="project-story compact">
+                  <div><strong>Architecture</strong><span>Soil moisture + climate sensing → ESP32 → control logic → remote interface.</span></div>
+                  <div><strong>Engineering focus</strong><span>Power awareness, calibration, safe actuation, and useful alerts.</span></div>
+                </div>
+                <ul class="tech-list"><li>ESP32</li><li>Sensors</li><li>Actuators</li><li>MQTT / REST</li></ul>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-number">P / 03</div>
+              <div class="project-body">
+                <div class="project-meta"><span>Safety systems</span><span>Multi-sensor logic</span></div>
+                <h3>Fire Detection & Alert System</h3>
+                <p>
+                  A layered early-warning system that combines thermal, smoke, or flame signals to improve
+                  detection confidence and deliver timely local and remote alerts.
+                </p>
+                <div class="project-story compact">
+                  <div><strong>Architecture</strong><span>Sensor fusion → threshold logic → local alarm → connected notification.</span></div>
+                  <div><strong>Engineering focus</strong><span>False-positive control, fail-safe behavior, and response latency.</span></div>
+                </div>
+                <ul class="tech-list"><li>Arduino</li><li>ESP32</li><li>Sensor fusion</li><li>Notifications</li></ul>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-number">P / 04</div>
+              <div class="project-body">
+                <div class="project-meta"><span>Edge computer vision</span><span>Driver safety</span></div>
+                <h3>Driver Drowsiness Detection</h3>
+                <p>
+                  An edge-vision safety prototype designed to identify visual fatigue cues in real time and
+                  trigger an immediate driver alert without depending on cloud processing.
+                </p>
+                <div class="project-story compact">
+                  <div><strong>Architecture</strong><span>Camera → Jetson Nano → vision pipeline → fatigue logic → alert.</span></div>
+                  <div><strong>Engineering focus</strong><span>Real-time inference, lighting variability, and explainable thresholds.</span></div>
+                </div>
+                <ul class="tech-list"><li>Jetson Nano</li><li>Computer vision</li><li>Python</li><li>Edge AI</li></ul>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-number">P / 05</div>
+              <div class="project-body">
+                <div class="project-meta"><span>Mobile interfaces</span><span>Connected operations</span></div>
+                <h3>IoT Monitoring Dashboard</h3>
+                <p>
+                  A reusable Flutter interface concept for viewing device health, live measurements,
+                  warnings, and safe control actions across connected field systems.
+                </p>
+                <div class="project-story compact">
+                  <div><strong>Architecture</strong><span>Devices → API or broker → structured state → responsive mobile UI.</span></div>
+                  <div><strong>Engineering focus</strong><span>Clear state, offline feedback, role-aware actions, and traceability.</span></div>
+                </div>
+                <ul class="tech-list"><li>Flutter</li><li>Dart</li><li>REST</li><li>IoT UX</li></ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-surface" id="skills" aria-labelledby="skills-title">
+        <div class="container section-grid">
+          <div class="section-index reveal"><span>03</span><p>Skills</p></div>
+          <div class="section-content">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Technical capability map</p>
+              <h2 id="skills-title">From electrical signals to decisions people can use.</h2>
+            </div>
+            <div class="skills-grid">
+              <article class="skill-group reveal">
+                <span class="skill-code">HW / FW</span><h3>Embedded systems</h3>
+                <ul><li>Arduino & ESP32 development</li><li>Sensor and actuator integration</li><li>Embedded C/C++ fundamentals</li><li>Serial protocols and debugging</li><li>Prototype validation</li></ul>
+              </article>
+              <article class="skill-group reveal reveal-delay">
+                <span class="skill-code">NET / IOT</span><h3>Connected devices</h3>
+                <ul><li>Device-to-cloud architecture</li><li>MQTT and REST data flows</li><li>Telemetry and alert design</li><li>Remote monitoring concepts</li><li>Connectivity fault handling</li></ul>
+              </article>
+              <article class="skill-group reveal">
+                <span class="skill-code">EDGE / CV</span><h3>Edge computing</h3>
+                <ul><li>Jetson Nano workflows</li><li>Computer vision pipelines</li><li>Python prototyping</li><li>Real-time decision logic</li><li>Local inference concepts</li></ul>
+              </article>
+              <article class="skill-group reveal reveal-delay">
+                <span class="skill-code">APP / DOC</span><h3>Interfaces & communication</h3>
+                <ul><li>Flutter and Dart</li><li>Operational dashboards</li><li>Technical documentation</li><li>Project demonstrations</li><li>Engineering education</li></ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <div class="container section-grid">
+          <div class="section-index reveal"><span>04</span><p>Experience</p></div>
+          <div class="section-content">
+            <div class="section-heading reveal">
+              <p class="eyebrow">How I contribute</p>
+              <h2 id="experience-title">Hands-on engineering, teaching, and technical ownership.</h2>
+            </div>
+            <div class="timeline">
+              <article class="timeline-item reveal">
+                <div class="timeline-marker"><span></span></div>
+                <div class="timeline-period">Current focus</div>
+                <div><h3>Embedded Systems Engineer & IoT Developer</h3><p>Designing practical prototypes that connect sensing, control, communications, edge processing, and mobile visibility. Work emphasizes integration, debugging, and clear technical decisions.</p></div>
+              </article>
+              <article class="timeline-item reveal">
+                <div class="timeline-marker"><span></span></div>
+                <div class="timeline-period">Ongoing</div>
+                <div><h3>Independent Project Builder</h3><p>Developing end-to-end concepts across smart infrastructure, agriculture, safety, mobility, and connected monitoring—turning broad ideas into demonstrable system architectures.</p></div>
+              </article>
+              <article class="timeline-item reveal">
+                <div class="timeline-marker"><span></span></div>
+                <div class="timeline-period">Education</div>
+                <div><h3>Technical Educator & Mentor</h3><p>Explaining electronics, embedded development, and IoT through practical examples. Focused on helping learners move from isolated components to complete, understandable systems.</p></div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-lined" id="education" aria-labelledby="education-title">
+        <div class="container section-grid">
+          <div class="section-index reveal"><span>05</span><p>Education</p></div>
+          <div class="section-content">
+            <div class="section-heading reveal">
+              <p class="eyebrow">Engineering foundation</p>
+              <h2 id="education-title">Built on electronics, computation, and continuous practice.</h2>
+            </div>
+            <div class="education-grid">
+              <article class="education-card reveal">
+                <div class="education-code">FORMAL / ALG</div>
+                <h3>Embedded Systems Engineering</h3>
+                <p>Academic foundation spanning electronics, microcontrollers, software, control, communications, and hardware–software integration.</p>
+                <span>Institution and graduation details: add from CV</span>
+              </article>
+              <article class="education-card reveal reveal-delay">
+                <div class="education-code">CONTINUOUS / 01</div>
+                <h3>Applied IoT & Edge Intelligence</h3>
+                <p>Continued project-based learning across connected sensors, mobile interfaces, computer vision, edge platforms, and system documentation.</p>
+                <span>Learning through building, testing, and teaching</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="achievements" aria-labelledby="achievements-title">
+        <div class="container">
+          <div class="section-title-row reveal">
+            <div><p class="eyebrow">06 / Achievements</p><h2 id="achievements-title">Evidence of range and ownership.</h2></div>
+            <p>Add verified awards, publications, certifications, competition results, or teaching metrics before publishing.</p>
+          </div>
+          <div class="achievement-grid">
+            <article class="achievement reveal"><strong>01</strong><h3>End-to-end builder</h3><p>Works across the full path from physical sensing and embedded control to connectivity and user interfaces.</p></article>
+            <article class="achievement reveal reveal-delay"><strong>02</strong><h3>Cross-platform range</h3><p>Builds with Arduino, ESP32, Jetson Nano, Python, Flutter, and practical IoT data flows.</p></article>
+            <article class="achievement reveal"><strong>03</strong><h3>Technical communicator</h3><p>Translates complex engineering ideas into structured demonstrations, documentation, and learning experiences.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section github-section" id="github" aria-labelledby="github-title">
+        <div class="container github-layout">
+          <div class="github-copy reveal">
+            <p class="eyebrow">07 / GitHub presence</p>
+            <h2 id="github-title">Engineering work should be inspectable.</h2>
+            <p>
+              My GitHub is being developed as a technical record: source-first repositories, clear setup
+              instructions, architecture notes, decisions, tests, and honest project status.
+            </p>
+            <div class="github-actions">
+              <a class="button button-primary" href="https://github.com/Imadjr" target="_blank" rel="noreferrer">View GitHub profile ↗</a>
+              <a class="text-link" href="https://github.com/Imadjr/dz-toll" target="_blank" rel="noreferrer">Explore DzToll repository ↗</a>
+            </div>
+          </div>
+          <div class="repo-panel reveal reveal-delay">
+            <div class="repo-panel-head"><span>github.com/Imadjr</span><i></i><i></i><i></i></div>
+            <div class="repo-rule"><span>REPOSITORY STANDARD</span><b>STATUS</b></div>
+            <ul>
+              <li><span>01</span><p>Readable project overview</p><b>README</b></li>
+              <li><span>02</span><p>Reproducible source and setup</p><b>SOURCE</b></li>
+              <li><span>03</span><p>Architecture and trade-offs</p><b>NOTES</b></li>
+              <li><span>04</span><p>Real visuals and demonstrations</p><b>MEDIA</b></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-layout">
+          <div class="reveal">
+            <p class="eyebrow">08 / Contact</p>
+            <h2 id="contact-title">Let’s build something that works beyond the demo.</h2>
+          </div>
+          <div class="contact-copy reveal reveal-delay">
+            <p>
+              I’m open to embedded systems and IoT roles, research opportunities, technical
+              collaborations, educational initiatives, and carefully scoped freelance projects.
+            </p>
+            <a class="contact-email" href="mailto:imad.djerarda@gmail.com">imad.djerarda@gmail.com <span>↗</span></a>
+            <div class="contact-links">
+              <a href="https://www.linkedin.com/in/imad-djr/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://github.com/Imadjr" target="_blank" rel="noreferrer">GitHub</a>
+              <!-- After adding the PDF, replace the href below with assets/cv/Imad-Eddine-Djerarda-CV.pdf -->
+              <a href="mailto:imad.djerarda@gmail.com?subject=CV%20request">Request CV</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span data-year></span> Imad Eddine Djerarda</p>
+        <p>Embedded systems · IoT · Algeria</p>
+        <a href="#home">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
